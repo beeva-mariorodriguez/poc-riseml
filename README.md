@@ -33,3 +33,16 @@
     * anyway: ``riseml system test`` fails
 * careful with riseml CLI version, the install process always install the latest riseml and may not be compatible with your riseml cli (so: always update riseml CLI before installing the cluster!)
 
+# AWS AMI compatibility chart
+
+## no GPU
+
+| ami                                                           | k8s 1.8 | k8s 1.7 |
+| ------------------------------------------------------------- | ------- | ------- |
+| aws-marketplace/CoreOS-stable-1520.8.0-hvm-*                  |   :D    |   :D    |
+| 900152524948/k8s-1.7-debian-jessie-amd64-hvm-ebs-2017-10-26   |   :(    |   ??    |
+| 383156758163/k8s-1.7-debian-jessie-amd64-hvm-ebs-2017-12-02   |   :(    |   :(    |
+| 383156758163/k8s-1.8-debian-jessie-amd64-hvm-ebs-2017-12-02   |   :D    |   ??    |
+| 383156758163/k8s-1.8-debian-stretch-amd64-hvm-ebs-2017-12-02  |   :D    |   ??    |
+
+
