@@ -17,6 +17,8 @@
 # notes
 
 * careful with riseml CLI version, the install process always install the latest riseml and may not be compatible with your riseml cli (so: always update riseml CLI before installing the cluster!)
+* project file documentation in http://docs.riseml.com is not very accurate
+* also, ``riseml init`` creates an _invalid_ riseml.yml
 
 # AWS AMI compatibility chart
 
